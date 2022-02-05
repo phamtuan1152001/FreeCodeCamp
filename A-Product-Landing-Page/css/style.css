@@ -1,0 +1,201 @@
+/* ----------------------------------------------------------- */
+/* Header grid */
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: aliceblue;
+}
+.logo {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 10px;
+}
+.nav-item {
+    align-self: center;
+    justify-self: center;
+}
+/* Kết thúc header grid */
+/* ----------------------------------------------------------- */
+/* Logo */
+.logo-image {
+    width: 100%;
+    height: auto;
+}
+/* Kết thúc logo */
+/* ----------------------------------------------------------- */
+/* Thanh điều hướng */
+.nav-item ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+.nav-item ul li {
+    display: inline;
+}
+.nav-item ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 30px;
+    margin: 30px;
+    font-weight: lighter; 
+}
+.nav-item ul li a:hover {
+    font-size: 35px;
+    transition: 0.6s;
+}
+/* Kết thúc thanh điều hướng */
+/* ----------------------------------------------------------- */
+/* Form content */
+.form-content {
+    margin: 110px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin: auto;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-control input {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.form-control button {
+    width: 40%;
+    padding: 5px;
+    border: solid 1px black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background: orange;
+    transition: 0.5s;
+}
+button:hover {
+    background: yellow;
+    cursor: pointer;
+    width: 45%;
+    transition: 0.5s;
+}
+/* Kết thúc form content */
+/* ----------------------------------------------------------- */
+/* Service quality */
+.service-quality {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.service-logo {
+    padding: 15px;
+    margin: auto;
+    justify-self: center;
+
+}
+.service-description {
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+}
+h2 {
+    margin: 0;
+}
+.service-description p {
+    margin: 0; 
+}
+/* Kết thúc service-quality */
+/* ----------------------------------------------------------- */
+/* Production */
+.production-intro {
+    /* width: 60%;
+    margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
+}
+.production-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.production-items {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid 1px black;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.production-items .name {
+    background: rgba(204, 197, 197, 0.87);
+    padding: 10px;
+    font-size: 20px;
+}
+.production-items .btn {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px;
+    background: yellow;
+    border: solid 1px white;
+    padding: 10px;
+    transition: 0.5s;
+    width: 50%;
+}
+.production-items .btn:hover {
+    transition: 0.5s;
+    font-size: 20px;
+}
+/* Kết thúc production */
+/* ----------------------------------------------------------- */
+/* Footer */
+footer {
+    margin-top: 20px;
+    right: 0;
+    bottom: 0;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+footer ul li {
+    display: inline;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+}
+footer p {
+    margin: 0 15px 0 0;
+    clear: both;
+    float: right;
+    right: 100px;
+    color: gray;
+}
+/* Kết thúc footer */
+/* ----------------------------------------------------------- */
