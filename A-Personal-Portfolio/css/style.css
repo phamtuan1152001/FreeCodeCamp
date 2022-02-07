@@ -1,0 +1,136 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    background: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+}
+header ul li {
+    display: inline;
+}
+header ul li a {
+    text-decoration: none;
+    color: rgba(238, 230, 230, 0.938);
+    font-size: 25px;
+    padding: 20px;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    width: 100%;
+    height: 100vh;
+}
+h1 {
+    color: rgba(238, 230, 230, 0.938);
+    font-size: 50px;
+    margin: 0%;
+}
+p {
+    color: #be3144;
+    font-size: 40px;
+    margin: 0;
+}
+.work {
+    background: #45567d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+h2 {
+    color: rgba(238, 230, 230, 0.938);
+    margin: 0;
+    font-size: 50px;
+    border-bottom: solid 3px rgba(238, 230, 230, 0.938);
+}
+.projects-grid {
+    margin-top: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+}
+.project-image {
+    /* width: 100%;
+    height: auto; */
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+.contact {
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 96vh;
+}
+.contact h2 {
+    border-bottom: none;
+}
+.contact p {
+    color: rgba(245, 245, 245, 0.507);
+    font-size: 20px;
+    margin: 0;
+}
+.socialmedia {
+    background-color: none;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    margin-top: 50px;
+}
+.socialmedia a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    transition: 2s;
+}
+.socialmedia a span {
+    padding-right: 10px;
+}
+.contact .socialmedia a span i:hover {
+    animation: pulse;
+    animation-duration: 2s; 
+}
+.socialmedia a:hover {
+    animation: pulse;
+    animation-duration: 2s; 
+}
+footer {
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-top: #be3144 solid 2px;
+}
+footer p {
+    margin: 0;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+}
