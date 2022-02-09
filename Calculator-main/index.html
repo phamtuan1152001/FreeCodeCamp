@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/style1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="group1">Calculator</h1>
+                <div class="divleft">
+                    <br/><br/><br/><br/><br/><br/><br/><br/>
+                    Enter a value <input id="value1" class="group2" type="text" value="" placeholder="First value"/>
+                    <br/>
+                    <br/>
+                    Enter a value <input id="value2" class="group2" type="text" value="" placeholder="Second value"/>
+                    <br/>
+                    <br/>
+                    <input class="group3" type="button" id="btn1" value="Addition (+)" onclick="add()"/>
+                    <input class="group3" type="button" id="btn2" value="Subtraction (-)" onclick="sub()"/>
+                    <input class="group3" type="button" id="btn3" value="Division (*)" onclick="div()"/>
+                    <input class="group3" type="button" id="btn4" value="Multiplication (/)" onclick="mup()"/>
+                </div>
+                <div class="divright">
+                    <br/><br/><br/><br/><br/><br/><br/><br/>
+                    Result: <div id="value3" class="group4" ></div>
+                    <br/>
+                    <br/>
+                    <input class="group5" type="button" id="btn5" value="Reset" onclick="message()"/>
+                    <h1 style="font-family:Times New Roman">Thank for using this Calculator!</h1>
+                </div>
+                <script>
+                        function add(){
+                            var value1 = document.getElementById('value1').value;
+                            var value2 = document.getElementById('value2').value;
+                            var add = parseInt(value1) + parseInt(value2);
+                            document.getElementById('value3').innerHTML = add;//chỉ dùng được trong thẻ div  
+                        }
+                        function sub(){
+                            var value1 = document.getElementById('value1').value;
+                            var value2 = document.getElementById('value2').value;
+                            var add = parseInt(value1) - parseInt(value2);
+                            document.getElementById('value3').innerHTML = add;//chỉ dùng được trong thẻ div  
+                        }
+                        function div(){
+                            var value1 = document.getElementById('value1').value;
+                            var value2 = document.getElementById('value2').value;
+                            var add = parseInt(value1) / parseInt(value2);
+                            document.getElementById('value3').innerHTML = add;//chỉ dùng được trong thẻ div  
+                        }
+                        function mup(){
+                            var value1 = document.getElementById('value1').value;
+                            var value2 = document.getElementById('value2').value;
+                            var add = parseInt(value1) * parseInt(value2);
+                            document.getElementById('value3').innerHTML = add;//chỉ dùng được trong thẻ div  
+                        }
+                    </script>
+            </div>
+        </div>      
+    </body>
+</html>

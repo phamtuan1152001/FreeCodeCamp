@@ -6,6 +6,8 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+/* ------------------------------------------------------------------------- */
+/* Header */
 header {
     background: #be3144;
     display: flex;
@@ -28,6 +30,8 @@ header ul li a {
     font-size: 25px;
     padding: 20px;
 }
+/* ------------------------------------------------------------------------- */
+/* About us */
 .about-us {
     display: flex;
     flex-direction: column;
@@ -47,7 +51,8 @@ p {
     color: #be3144;
     font-size: 40px;
     margin: 0;
-}
+}/* ------------------------------------------------------------------------ */
+/* Work */
 .work {
     background: #45567d;
     display: flex;
@@ -60,21 +65,47 @@ p {
 h2 {
     color: rgba(238, 230, 230, 0.938);
     margin: 0;
-    font-size: 50px;
+    font-size: 40px;
     border-bottom: solid 3px rgba(238, 230, 230, 0.938);
 }
 .projects-grid {
-    margin-top: 20px;
-    grid-template-columns: 25% 25% 25% 25%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto;
 }
-.project-image {
-    /* width: 100%;
-    height: auto; */
-    border-radius: 5px;
-    width: 300px;
-    height: 300px;
+.projects-grid .project-item {
+    /* padding: 0 50px 0 50px; */
 }
+.projects-production {
+    background:  rgba(97, 95, 95, 0.877) ;
+    margin: 15px 30px 15px 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 15px 1px rgba(48, 46, 46, 0.836);
+    border-top-right-radius: 10px;
+}
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-item p a {
+    color: rgba(238, 230, 230, 0.938);;
+    font-size: 25px;
+    /* margin-top: 10px */;
+    text-decoration: none;
+}
+.project-item p {
+    margin-bottom: 10px;
+}
+.project-image {
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* ------------------------------------------------------------------------- */
+/* Contact */
 .contact {
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
@@ -111,11 +142,11 @@ h2 {
 }
 .contact .socialmedia a span i:hover {
     animation: pulse;
-    animation-duration: 2s; 
+    animation-duration: 1s; 
 }
 .socialmedia a:hover {
     animation: pulse;
-    animation-duration: 2s; 
+    animation-duration: 1s; 
 }
 footer {
     background-color: #000;
